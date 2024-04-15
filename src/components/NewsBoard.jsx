@@ -21,7 +21,7 @@ const NewsBoard = ({Category}) => {
   return (
     <>
 
-    <h2 className='text-center my-4'>Letest <span className='badge bg-danger fs-3'>News</span> </h2>  
+    <h2 className='text-center my-4'>Latest <span className='badge bg-danger fs-3'>News</span> </h2>  
 
 
     {
