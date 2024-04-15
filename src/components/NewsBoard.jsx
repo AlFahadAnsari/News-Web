@@ -25,9 +25,18 @@ const NewsBoard = ({Category}) => {
 
 
     {
-      Artical.map((news)=>{
-        return( < NewsTheme key={news.title} title={news.title.slice(0,50)} description={news.description ?news.description.slice(0,90):'the description is not available' } url={news.url} urlToImage={news.urlToImage ?news.urlToImage : img  }/>) })
-    }      
+  Artical && Artical.map((news) => {
+    return (
+      <NewsTheme 
+        key={news.title} 
+        title={news.title.slice(0, 50)} 
+        description={news.description ? news.description.slice(0, 90) : 'the description is not available'} 
+        url={news.url} 
+        urlToImage={news.urlToImage ? news.urlToImage : img} 
+      />
+    );
+  })
+}    
 
     </>
   )
